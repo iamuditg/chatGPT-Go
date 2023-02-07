@@ -28,5 +28,7 @@ func main() {
 	if err != nil {
 		log.Fatalln(err)
 	}
+	fmt.Println(resp)
 	fmt.Println(resp.Choices[0].Text)
+	fmt.Println(resp.Choices[0].FinishReason)
 }
